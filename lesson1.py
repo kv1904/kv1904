@@ -3,34 +3,35 @@
 запросите у пользователя несколько чисел и строк и сохраните в переменные, выведите на экран.
 """
 
+import time
 operant1 = 8
 operant2 = 5
-print ('Операнты:', operant1, operant2, 'summ =', operant1+operant2)
-first_name = str (input ('What is your name?'))
-last_name = str (input('What is your last name?'))
-age = int (input('How old are you?'))
-weight = float (input('What is your weght?'))
-print (f'Hello, {first_name} {last_name}! Yor age is {age}, and your weight is {weight}')
+print('Операнты:', operant1, operant2, 'summ =', operant1+operant2)
+first_name = str(input('What is your name?'))
+last_name = str(input('What is your last name?'))
+age = int(input('How old are you?'))
+weight = float(input('What is your weght?'))
+print(
+    f'Hello, {first_name} {last_name}! Yor age is {age}, and your weight is {weight}')
 
 """
 2. Пользователь вводит время в секундах. Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс. Используйте форматирование строк.
 """
-import time
-from tkinter import N
-user_time = int (input ('How long will it take in seconds?'))
+user_time = int(input('How long will it take in seconds?'))
 convert_user_time = time.gmtime(user_time)
-new_user_time = time.strftime("%H:%M:%S", convert_user_time) #перевод в формат чч:мм:сс
+# перевод в формат чч:мм:сс
+new_user_time = time.strftime("%H:%M:%S", convert_user_time)
 print(f'You need {new_user_time}')
 
 """
 3. Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn. Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
 """
 
-n = int (input("Set variable n >>> "))
-nn = int(str(n) * 2)
-nnn = int(str(n) * 3)
-total = (n + nn + nnn)
-print("Сумма чисел n + nn + nnn = %d" % total)
+n = input("Set variable n >>> ")
+nn = int(n + n)
+nnn = int(n + n + n)
+total = int(n) + nn + nnn
+print("Summ n + nn + nnn = %d" % total)
 
 """
 4. Пользователь вводит целое положительное число. Найдите самую большую цифру в числе. Для решения используйте цикл while и арифметические операции.
@@ -43,10 +44,10 @@ if not user_number.isdigit():
     exit()
 
 # вывод самой большой цифры из числа пользователя
-# print(max(number))
+# print(max(user_number))
 
-# вывод самой большой цифры через циклы 
-user_number = int(user_number)     
+# вывод самой большой цифры через циклы
+user_number = int(user_number)
 max_number = user_number % 10
 
 while user_number > 0:
@@ -63,8 +64,8 @@ print("Maximum digit in a number ", max_number)
 Далее запросите численность сотрудников фирмы и определите прибыль фирмы в расчете на одного сотрудника.
 """
 
-revenue = float (input ("What is the company's revenue? "))
-costs = float (input ('What are the costs of the company? '))
+revenue = float(input("What is the company's revenue? "))
+costs = float(input('What are the costs of the company? '))
 
 profit = revenue - costs
 
@@ -105,9 +106,9 @@ target = int(input("What is the target run result?"))
 result_days = 1
 
 while first_result < target:
-        first_result *= 1.1
-        result_days += 1
-        
+    first_result *= 1.1
+    result_days += 1
+
 print(f"The result will be achieved in {result_days} days")
 
 
