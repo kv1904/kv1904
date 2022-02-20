@@ -12,15 +12,10 @@ for parts in str_list:
 При нечетном количестве элементов последний сохранить на своем месте. Для заполнения списка элементов необходимо использовать функцию input().
 """
 
-parts = input("Input some values separated by a space >>>").split(" ")
+parts = input("Input some values separated by a space >>>").split()
 
-index = len(parts) - 1
-
-# print(f"{index} values")
-
-for new_index in range(0, index, 2):
-    next_index = new_index + 1
-    parts[index], parts[next_index] = parts[next_index], parts[index]
+for new_index in range(0, len(parts) - 1, 2):
+    parts[new_index], parts[new_index + 1] = parts[new_index + 1], parts[new_index]
 
 print(parts)
 
