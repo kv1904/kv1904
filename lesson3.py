@@ -102,8 +102,7 @@ print(my_func(float(input("Enter a positive integer a >>> ")),
 total = 0
 
 while True:
-    entered_list = input(
-        "Enter a string of numbers separated by a space >>> ").split()
+    entered_list = input("Enter a string of numbers separated by a space >>> ").split()
     special_symbol = False
 
     for number in entered_list:
@@ -134,8 +133,7 @@ def int_func(input_word: str):
     ])
 
 
-entered_words = input(
-    "Enter several latin words separated by spaces >>> ").split()
+entered_words = input("Enter several latin words separated by spaces >>> ").split()
 
 for idx, word in enumerate(entered_words):
     entered_words[idx] = int_func(word)
