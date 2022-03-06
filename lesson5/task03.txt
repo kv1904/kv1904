@@ -1,0 +1,10 @@
+Blue 23543.12
+White 13749.32
+Green 22511.44
+Purple 17234.55
+Orange 45554.14
+Pink 8245.65
+Blonde 20145.33
+Brown 19787.99
+Black 24365.22
+Red 14000.00
