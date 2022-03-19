@@ -8,4 +8,6 @@
 
 2022-03-06 Lesson 5. Tasks 1-7.
 
-2022-03-13 Lesson 5. Tasks 1-5.
+2022-03-13 Lesson 6. Tasks 1-5.
+
+2022-03-19 Lesson 7. Tasks 1-3.
